@@ -70,4 +70,4 @@ bot.on("message", async message => {
   let cmd = bot.commands.get(command.slice(prefix.length));
   if(cmd) cmd.run(bot, message, args);
       });
-bot.login("MzcxNjYwODI1Nzc1MzA4ODEw.Dhq7AA.qY4jKvjBQk4pGTVtwv2FCFKSwLk");
+bot.login(process.env.BOT_TOKEN);
