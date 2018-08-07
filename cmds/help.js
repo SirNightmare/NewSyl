@@ -5,6 +5,7 @@ let client = new Discord.Client();
 module.exports.run = async (bot, message, args) => {
   if(message.author.bot) return;
   message.reply(`Check you DM's :inbox_tray:`)
+  message.author.send("Why not join the support server https://discord.gg/Ec9hRh8")
 var embed = new Discord.RichEmbed()
 .setAuthor(` | Commands`, `${bot.user.avatarURL}`)
 .setTitle("Fun!")
