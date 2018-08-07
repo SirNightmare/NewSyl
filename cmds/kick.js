@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
     .addField("Kicked By", `<@${message.author.id}> with ID ${message.author.id}`)
     .addField("Kicked In", message.channel)
-    .addField("Tiime", message.createdAt)
+    .addField("Time", message.createdAt)
     .addField("Reason", kReason);
 
     let kickChannel = message.guild.channels.find(`name`, "incidents");
